@@ -1,0 +1,88 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+
+body {
+    font-family: 'Poppins', sans-serif;
+  /*   background-color: #06869c44;*/ 
+    background: linear-gradient(to right, #0077B5, #00AB6C);   
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.wrapper {
+    background: #ffffff;
+    padding: 20px;
+    border-radius: 25px;
+    box-shadow: 0 8px 8px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 500px;
+    text-align: center;
+}
+
+h1 {
+    margin-bottom: 30px;
+    color: #000000;
+    font-family: 'Poppins', sans-serif;  
+    background-color: #ffffff;
+}
+
+.links-container {
+    display: flex;
+    background-color: #ffffff;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.link-item a {
+    text-decoration: none;
+    color: #000000; /* Buton yazı rengi */
+    font-size: 18px;
+    display: flex;  
+    align-items: center;
+    justify-content: center;
+    gap: 10px;  
+    padding: 30px;  
+    border-radius: 25px;  
+    background: rgb(255, 255, 255);   
+    transition: color 0.3s, transform 0.3s, background-color 0.3s;
+}  
+
+.link-item a:hover {
+    color: #000000; /* Hover durumunda buton yazı rengi */
+    transform: scale(1.05);
+}
+
+.link-item:hover {
+    transform: scale(1.02);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+.link-item i {
+    font-size: 30px; /* İkon boyutu */
+}
+
+.github-icon {
+    color: #333333; /* GitHub siyah rengi */
+}
+
+.linkedin-icon {
+    color:  #0077B5 ; /* LinkedIn mavisi */
+}
+
+.medium-icon {
+    color: #000000; /* Medium yeşili */
+}
+
+.link-item a:hover .github-icon {
+    color: #24292e;
+}
+
+.link-item a:hover .linkedin-icon {
+    color: #0077b5 !important; /* !important ekleyerek rengin değişmesini zorlayın */
+}
+
+.link-item a:hover .medium-icon {
+    color: #000000;
+}
